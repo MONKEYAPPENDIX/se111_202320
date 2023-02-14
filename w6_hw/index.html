@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Week six HW</h1>
+
+
+    <script>
+
+        var hourlyWage = Number(prompt(`what is your hourly wage`))
+        var hoursWorked = Number(prompt(`How many hours did you work this week?`))
+        
+        var tax = .2
+
+        var  grossPay = hourlyWage * hoursWorked
+        var uncleSamsShare = grossPay * tax
+        var netPay = grossPay - uncleSamsShare
+
+        alert(`Gross pay: $${grossPay.toFixed(2)} \nUncle Sam's Share: $${uncleSamsShare.toFixed(2)} \nNet Pay: $${netPay.toFixed(2)}`)
+        console.log(`Gross Pay:$ $${grossPay.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $${uncleSamsShare.toFixed(2)}`)
+        console.log(`Your Net pay is: $${netPay.toFixed(2)}`)
+        
+    </script>
+</body>
+</html>
